@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+@font-face {
+    font-family: one-piece-font;
+    src: url(/resources/one-piece-font.ttf);
+}
+
+:root {
+    --text-shadow-color: rgb(210, 0, 35);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: one-piece-font, 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    display: flex;
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+    /* https://www.wallpaperflare.com/one-piece-monkey-d-luffy-wallpaper-gkhvh/download */
+    background-image: url(resources/background-main.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper {
+    width: 70vw;
+    height: 80vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* add glass effect */
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.wrapper p, .wrapper > h1 {
+    filter: drop-shadow(10px 10px 5px var(--text-shadow-color));
+    -webkit-filter: drop-shadow(10px 10px 5px var(--text-shadow-color));
+}
+
+.wrapper p {
+    font-size: 3rem;
+    margin-top: 2rem;
+    letter-spacing: 5px;
+}
+
+.wrapper > h1 {
+    text-transform: uppercase;
+    position: relative;
+    margin: 5%;
+    font-size: 4rem;
+    letter-spacing: 1rem;
+}
+
+.logo {
+    width: 20%;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+.faction {
+    display: flex;
+    gap: 15em;
+    flex-wrap: wrap;
+}
+
+.choice, .choice img {
+    transition: 250ms;
+    cursor: pointer;
+}
+
+.choice:hover img{
+    scale: 1.05;
+    translate: 0 -10px;
+}
+
+.faction h1 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    font-size: 3rem;
+    margin-top: 1rem;
+}
+
+.faction img {
+    height: 300px;
+    width: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+* {
+    /* border: solid 1px black; */
+}
