@@ -25,15 +25,13 @@ body {
     align-items: center;
 
     /* https://www.wallpaperflare.com/one-piece-monkey-d-luffy-wallpaper-gkhvh/download */
-    background-image: url(resources/background-main.jpg);
-    background-size: cover;
-    background-position: center;
+    background: url(resources/background-main.jpg) center / cover;
 }
 
 .wrapper {
     width: 70vw;
     height: 80vh;
-    position: relative;
+    /* position: relative; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,9 +48,11 @@ body {
 .wrapper p, .wrapper > h1 {
     filter: drop-shadow(10px 10px 5px var(--text-shadow-color));
     -webkit-filter: drop-shadow(10px 10px 5px var(--text-shadow-color));
+    text-transform: uppercase;
 }
 
 .wrapper p {
+    text-transform: uppercase;
     font-size: 3rem;
     margin-top: 2rem;
     letter-spacing: 5px;
@@ -80,13 +80,14 @@ body {
 }
 
 .choice, .choice img {
-    transition: 250ms;
+    transition: 0.4s;
     cursor: pointer;
 }
 
 .choice:hover img{
     scale: 1.05;
-    translate: 0 -10px;
+    translate: 0 -20px;
+    filter: grayscale(0);
 }
 
 .faction h1 {
@@ -101,9 +102,5 @@ body {
     height: 300px;
     width: 100%;
     border-radius: 50%;
-    overflow: hidden;
-}
-
-* {
-    /* border: solid 1px black; */
+    filter: grayscale(0.8);
 }
