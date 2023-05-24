@@ -32,34 +32,38 @@
                     </h1>
 
                     <div class="input-container">
-                        <input type="text" name="f-name" id="f-name" required>
+                        <input type="text" name="f-name" id="f-name" placeholder="First Name" required>
                         <label for="f-name">First Name</label>
                     </div>
 
                     <div class="input-container">
-                        <input type="text" name="l-name" id="l-name" required>
+                        <input type="text" name="l-name" id="l-name" placeholder="Last Name" required>
                         <label for="l-name">Last Name</label>
                     </div>
 
                     <div class="input-container">
-                        <input type="email" name="mail" id="mail" required>
+                        <input type="text" name="phone" id="username" placeholder="Username" required>
+                        <label for="username">Username</label>
+                    </div>
+
+                    <div class="input-container">
+                        <input type="email" name="mail" id="mail" placeholder="E-mail" required>
                         <label for="mail">E-mail</label>
                     </div>
 
                     <div class="input-container">
-                        <input type="tel" name="phone" id="phone" required>
-                        <label for="phone">Phone Number</label>
-                    </div>
-
-                    <div class="input-container">
-                        <input type="password" name="pword" id="pword" required>
+                        <input type="password" name="pword" id="pword" placeholder="Password" minlength="5" required>
                         <label for="pword">Password</label>
                     </div>
 
                     <div class="input-container">
-                        <input type="password" name="con-pword" id="con-pword" required>
+                        <input type="password" name="con-pword" id="con-pword" placeholder="Confirm Password" minlength="5" required>
                         <label for="con-pword">Confirm Password</label>
                     </div>
+
+                    <button type="submit">Create Account</button>
+                    
+                    <div class="log-in"><h2>Already have an account? <a href="#">Log in</a></h2></div>    
 
                 </form>
             </div>

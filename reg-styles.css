@@ -36,7 +36,7 @@ body {
     justify-content: center;
 
     /* add glass effect */
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    background: linear-gradient(135deg, rgba(90, 8, 223, 0.1), rgba(240, 12, 12, 0));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 20px;
@@ -88,12 +88,14 @@ body {
 .greeting h1 {
     margin-top: 2rem;
     font-size: 1.8rem;
+    filter: drop-shadow(10px 10px 10px red);
 }
 
 h1 span {
     display: block;
     width: 100%;
     text-align: right;
+    filter: drop-shadow(10px 10px 10px red);
 }
 
 .right-section .greeting {
@@ -131,6 +133,7 @@ input {
 }
 
 label {
+    opacity: 0;
     width: 70%;
     font-size: 1.5rem;
     transform: translate(10px, -35px);
@@ -140,6 +143,7 @@ label {
 input:focus + label,
 input:valid + label {
     transform: translate(0, -65px);
+    opacity: 1;
 }
 
 input:focus,
@@ -152,11 +156,40 @@ input:valid {
     border: solid 2px greenyellow;
 }
 
+button {
+    padding: 0.1rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+    width: 50%;
+    height: 3rem;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #0bccbc;
+}
+
+.log-in {
+    margin-top: 0.8rem;
+}
+
 input:not(:focus):not(:placeholder-shown):invalid {
     border: solid 2px red;
+}
+
+input::placeholder {
+    color: black;
+    transition: all 0.5s;
+}
+
+input:focus::placeholder {
+    opacity: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    filter: drop-shadow(10px 10px 5px red);
 }
 
 * {
     /* outline: 1px solid black; */
 }
-
