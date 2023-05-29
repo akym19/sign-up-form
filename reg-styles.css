@@ -175,6 +175,16 @@ input:not(:focus):not(:placeholder-shown):invalid {
     border: solid 2px red;
 }
 
+.input-container .error-message {
+    opacity: 0;
+    color: red;
+}
+  
+input:not(:focus):not(:placeholder-shown):invalid + label + .error-message {
+    opacity: 1;
+    transition: 0.5s;
+}
+
 input::placeholder {
     color: black;
     transition: all 0.5s;
