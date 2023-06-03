@@ -154,6 +154,7 @@ input:focus-visible {
 
 input:valid {
     border: solid 2px greenyellow;
+    background: transparent;
 }
 
 button {
@@ -176,11 +177,10 @@ input:not(:focus):not(:placeholder-shown):invalid {
 }
 
 .input-container .error-message {
-    position: relative;
     opacity: 0;
     color: red;
 }
-  
+
 input:not(:focus):not(:placeholder-shown):invalid + label + .error-message {
     opacity: 1;
     transform: translate(0, -15px);
@@ -194,6 +194,10 @@ input::placeholder {
 
 input:focus::placeholder {
     opacity: 0;
+}
+
+#confirmPasswordMatch {
+    color: red;
 }
 
 a {

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>One Piece Adventures</title>
     <link rel="stylesheet" href="reg-styles.css">
+    <script src="password-check.js" defer></script>
 </head>
 <body>
     <div class="wrapper">
@@ -26,7 +27,7 @@
                 </h1>
             </div>
             <div class="form-container">
-                <form action="#" method="post">
+                <form id="signUpForm" action="#" method="post">
                     <h1 class="form-header">
                         Set sail!
                     </h1>
@@ -67,11 +68,14 @@
                     </div>
 
                     <div class="input-container">
-                        <input type="password" name="con-pword" id="con-pword" placeholder="Confirm Password" required>
+                        <input type="password" name="conPword" id="con-pword" placeholder="Confirm Password" required>
                         <label for="con-pword">Confirm Password</label>
+                        <div id="confirmPasswordMatch">
+                            
+                        </div>
                     </div>
 
-                    <button type="submit">Create Account</button>
+                    <button class="submitBtn" type="submit">Create Account</button>
                     
                     <div class="log-in"><h2>Already have an account? <a href="#">Log in</a></h2></div>    
 
