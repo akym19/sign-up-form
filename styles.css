@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: one-piece-font;
-    src: url(resources/one-piece-font.ttf);
+    src: url(../one-piece-font.ttf);
 }
 
 :root {
