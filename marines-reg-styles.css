@@ -48,7 +48,8 @@ body {
     height: 100%;
     width: 45vw;
     border-radius: 0 20px 20px 0;
-    background: url(resources/going-merry.jpg) center / cover;
+    background: url(resources/marine-ship.jpg) center / cover;
+    /* https://www.pxfuel.com/en/desktop-wallpaper-iosct */
 }
 
 .left-section .banner {
@@ -62,6 +63,7 @@ body {
 .banner img {
     width: 25%;
     margin-left: 1%;
+    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(141deg) brightness(106%) contrast(101%);
 }
 
 .left-section span {
@@ -86,6 +88,7 @@ body {
 }
 
 .greeting h1 {
+    color: white;
     margin-top: 2rem;
     font-size: 1.8rem;
     filter: drop-shadow(10px 10px 10px red);
@@ -204,4 +207,8 @@ a {
     text-decoration: none;
     color: black;
     filter: drop-shadow(10px 10px 5px red);
+}
+
+h2 a {
+    color: white;
 }
